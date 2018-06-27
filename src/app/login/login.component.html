@@ -1,0 +1,16 @@
+<div class="col-md-4 col-md-offset-4 login">
+    <h2 class="text-center">Verify It's You</h2>
+  
+    <form>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" id="email" placeholder="Enter email" [(ngModel)]="login.username" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" [(ngModel)]="login.password" name="pwd">
+      </div>
+      <button (click)="userlogin(login)" type="submit" class="btn btn-success btn-lg">login</button>
+    </form>
+  </div>
+  
